@@ -7,7 +7,7 @@ var connection = mysql.createConnection({
   host:'localhost',
   user:'root',
   password:'root',
-  database:'transworld'
+  database:'contacts'
 })
 connection.connect(function(err){
   if(err)

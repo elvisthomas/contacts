@@ -36,14 +36,6 @@ app.use(compression(),function(req,res,next){
   }
 });
 
-// MONGODB CONNECTION
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/densub', {useUnifiedTopology: true, useNewUrlParser: true})
-
-/* var mongoose = require('mongoose');
-const uri = "mongodb+srv://dhlmailtester:dhl%403210pass%23@cluster0-centa.mongodb.net/test?retryWrites=true&w=majority";
-mongoose.connect(uri, {useNewUrlParser: true})
- */
 // view engine setup
 app.set('views', path.join(__dirname, 'public'));
 app.set('view engine', 'jade');
