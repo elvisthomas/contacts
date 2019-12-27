@@ -1,0 +1,32 @@
+<!-- <app-header [fixed]="true" -->
+<app-header [navbarBrandRouterLink]="['/home']" [fixed]="true"
+  [navbarBrandFull]="{src: 'assets/img/avatars/images.png', width: 50, height: 50, alt: 'TEST'}"
+  [navbarBrandMinimized]="{src: 'assets/img/avatars/images.png', width: 30, height: 30, alt: 'TEST'}"
+  [sidebarToggler]="'lg'" [asideMenuToggler]="false">
+
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item dropdown" dropdown placement="bottom right">
+      <a class="nav-link text-white text-capitalize" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"
+        dropdownToggle (click)="false">
+        <img src="assets/img/avatars/avatar.png" class="img-avatar" alt="admin@gmail.com" />
+       Admin
+        <i class="fa fa-angle-down"> </i> &nbsp;&nbsp;
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" *dropdownMenu aria-labelledby="simple-dropdown">
+        <a class="dropdown-item"><i class="fa fa-gear"></i> Settings</a>
+        <a class="dropdown-item"><i class="fa fa-lock"></i> Logout</a>
+      </div>
+    </li>
+  </ul>
+</app-header>
+<div class="app-body" id="admin-container">
+  <main class="main row mr-0" style="background: #fff;">
+    <div class="container-fluid">
+      <br>
+      <app-loading></app-loading>
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
+<app-footer>
+</app-footer>

@@ -1,0 +1,24 @@
+
+.app-header, .sidebar {
+  background: black;
+}
+.sidebar .nav-item a.nav-link.active {
+  background: #20a8d8;
+}
+
+.increase_div {
+  h5 {
+    color: #fff;
+  }
+  button.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    bottom: 0;
+  }
+}
+
+.app-header .navbar-toggler-icon{
+  background: none !important;
+}

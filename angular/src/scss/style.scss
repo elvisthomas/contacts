@@ -1,0 +1,38 @@
+// If you want to override variables do it here
+@import "variables";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+@import "util.css";
+
+@import '~ngx-toastr/toastr.css';
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active   {
+    box-shadow: 0 0 0 30px white inset !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.img-responsive {
+  display: block;
+    max-width: 100%;
+    height: auto;
+}
+.card {
+  border: 0;
+  box-shadow: 0px 0px 10px 1px #d7d7d7;
+}
+.box-shadow-1 {
+box-shadow: 0px 8px 7px -1px #d7d7d7;
+
+}
+body {
+  font-size: 15px;
+  font-family: 'ProximaNova';
+  color: #070808;
+  background-color: #fff;
+}
