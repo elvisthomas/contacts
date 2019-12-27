@@ -16,7 +16,7 @@ export class GlobalService {
   baseUrl: any = environment.baseUrl;
   public getData(): any {
     // tslint:disable-next-line: prefer-const
-    let apiURL = `${this.baseUrl}users/getData`;
+    let apiURL = `${this.baseUrl}contacts/getData`;
     console.log('apiURL============', apiURL);
     return this.http.get(apiURL);
   }

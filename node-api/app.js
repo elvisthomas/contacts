@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser')
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var contactsRouter = require('./routes/contacts');
 const jwt = require('jsonwebtoken');
 var db = require('./core/db');
 var dotenv = require('dotenv').config();
@@ -51,11 +51,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-// app.use('/upload', require('./controllers/localFileUpload'));
-
-// app.use('/users/doSignup', usersRouter);
-// app.use('/users/getUsername', usersRouter);
+app.use('/contacts', contactsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
