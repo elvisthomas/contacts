@@ -1,4 +1,3 @@
-const Users = require('../models/users.model.js');
 const async = require('async');
 require('dotenv').config();
 
